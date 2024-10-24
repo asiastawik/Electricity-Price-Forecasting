@@ -20,10 +20,8 @@ This project involves analyzing electricity price data from the GEFCom and Nord 
 - Create a new column for a naive forecast that takes the value of the corresponding hourly period from the preceding day. Label this forecast as "naive".
 
 ## AR(1) Forecast Preparation
-- Prepare two new columns with AR(1) forecasts defined as:
-  \[
-  \hat{y}_{d,h} = \beta_0 + \beta_1 \cdot y_{d-1,h} + \epsilon
-  \]
+- Prepare two new columns with AR(1) forecasts:
+
 - **Single Model Approach**:
   1. Estimate the weights using data from all hours up until (and including) 2011-06-30, resulting in 4320 samples.
   2. Produce forecasts for all days after 2011-06-30 and compute the Mean Absolute Error (MAE).
